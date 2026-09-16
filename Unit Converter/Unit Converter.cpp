@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void cmToInches(double cm)
+void cmToInches(double cm) //void functions to calculate each conversion
 {
 	cout << "Answer: " << cm / 2.54 << " inches" << endl;
 }
@@ -33,9 +33,9 @@ void fahToCel(double f)
 
 int main()
 {
-	int choice;
+	int choice; //letting user choose what to convert
 	double number;
-	char again = 'y';
+	char again = 'y'; //allows program to continue running according to user choice
 
 	while (again == 'y')
 	{
@@ -53,7 +53,7 @@ int main()
 		cout << "Enter value: ";
 		cin >> number;
 
-		if (choice == 1)
+		if (choice == 1) //if statements to convert units according to what the user wants to convert
 			cmToInches(number);
 
 		else if (choice == 2)
